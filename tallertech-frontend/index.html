@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>TallerTech - Gestión de Usuarios</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>TallerTech - Gestión de Usuarios</h1>
+
+  <section class="form-section">
+    <h2>Registrar Usuario</h2>
+    <form id="userForm">
+      <label>Nombre:
+        <input type="text" id="nombre" required />
+      </label>
+      <label>Cédula:
+        <input type="text" id="cedula" required />
+      </label>
+      <label>Correo:
+        <input type="email" id="correo" />
+      </label>
+      <label>Teléfono:
+        <input type="text" id="telefono" />
+      </label>
+      <label>Dirección:
+        <input type="text" id="direccion" />
+      </label>
+      <button type="submit">Guardar Usuario</button>
+    </form>
+  </section>
+
+  <section class="table-section">
+    <h2>Lista de Usuarios</h2>
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Cédula</th>
+          <th>Correo</th>
+          <th>Teléfono</th>
+          <th>Direccion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Los usuarios se cargarán aquí -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
